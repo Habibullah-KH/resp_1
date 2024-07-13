@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after{
+
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body{
+
+  font-family: "Poppins", sans-serif;
+}
+header{
+  
+  position: relative;
+}
+
+
+header nav{
+
+  display: flex;
+  width: 100vw;
+  padding: 0.6rem;
+  margin: 0px auto;
+  justify-content: space-between;
+  align-items: baseline;
+
+
+}
+
+header nav ul{
+
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  border-style: dashed;
+  padding: 0.3rem 0.4rem;
+
+}
+
+header nav ul li a{
+
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.9rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+
+
+}
+
+header nav ul li a:hover{
+
+  color: hsla(50, 100%, 52%);
+  border-radius: 0.5rem;
+}
+
+
+
+header .image_container img{
+
+  width: 100%;
+  vertical-align: middle;
+
+}
+
+header .image_container .logo{
+
+  height: 20rem;
+  font-size: 2.5rem;
+  padding: 2rem;
+  font-weight: 700;
+  /* background-color: #ffd60a; */
+  background-image:linear-gradient(#ffd60ae1, #ffd60a80), url(/resource/aa.png);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+
+}
+
+
+header .image_container .logo span{
+
+  color: #d62828;
+  font-size: 6rem;
+}
+
+
+
+
+
+@media screen and (min-width: 962px) and (max-width: 1080px) {
+
+
+  .container .image_container{
+  
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    
+  }
+  
+  
+  header .image_container img{
+  
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  
+  }
+  
+  
+  header .image_container .logo{
+  
+    height: auto;
+
+  }
+
+    
+  
+  header .image_container .logo h2{
+  
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  }
+  
+
+
+  
+
+@media screen and (min-width: 1081px) and (max-width: 2980px) {
+
+  .container .image_container{
+  
+    /* display: flex;
+    flex-direction: row;
+    max-width: 1280; */
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+
+  }
+  
+  
+  header .image_container img{
+  
+    width: 100%;
+    height: auto;
+    background-size:cover;
+  
+  }
+  
+  
+  header .image_container .logo{
+  
+    height: auto;
+    /* width: 60%; */
+
+  }
+
+    
+  
+  header .image_container .logo h2{
+  
+    display: block;
+
+  }
+
+}
