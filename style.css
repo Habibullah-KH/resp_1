@@ -78,7 +78,7 @@ header .image_container .logo{
   padding: 2rem;
   font-weight: 700;
   /* background-color: #ffd60a; */
-  background-image:linear-gradient(#ffd60ae1, #ffd60a80), url(/resource/aa.png);
+  background-image:linear-gradient(#ffd60ae1, #ffd60a80), url(resource/aa.png);
   background-position: center;
   display: flex;
   align-items: center;
