@@ -325,11 +325,6 @@ main .main_descrip{
   grid-template-rows: 1fr 1fr;
 }
 
-main .main_descrip:hover{
-  
-
-
-}
 
 main .main_descrip .card_1, .card_2{
 
@@ -380,4 +375,114 @@ main .main_descrip .card_link:hover{
 
   color: #ffd60a;
 }
+
+
+
+@media screen and (min-width: 962px) and (max-width: 1080px){
+
+  
+main .main_descrip{
+
+  font-size: 1.5rem;
+}
+
+
+main .main_descrip .card_link{
+
+  width: 8.2rem;
+
+}
+
+}
+
+
+@media screen and (min-width: 1081px) and (max-width: 2981px){
+
+  
+main .main_descrip{
+
+  font-size: 1.6rem;
+}
+
+
+main .main_descrip .card_link{
+
+  width: 8.8rem;
+
+}
+
+
+main .main_descrip .card_1, .card_2{
+
+  max-width: 40%;
+}
+
+main .main_descrip .card_1{
+
+  margin-bottom: 1rem;
+}
+
+}
+
+
+/** main section design end */
+
+#footer_section{
+
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #292930;
+}
+
+#footer_section .foot_info{
+
+  max-width: 60%;
+}
+
+#footer_section h2{
+
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+
+}
+
+#footer_section p{
+
+  margin-bottom: 1rem; 
+  font-weight: 700;
+
+}
+
+#footer_section .foot_contact{
+
+font-size: 2rem;
+margin-bottom: 1.5rem;
+padding: 0.5rem;
+border: 1px solid;
+border-style: dashed;
+width: 9rem;
+border-radius: 1.8rem;
+margin: 0px auto;
+
+}
+
+#footer_section .foot_contact a{
+
+text-decoration: none;
+color: rgb(255, 255, 255);
+
+
+}
+
+#footer_section .foot_contact a:hover{
+
+color: #ffc60a;
+
+}
+
+
 
