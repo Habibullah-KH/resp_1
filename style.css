@@ -25,10 +25,13 @@ header nav{
 
   display: flex;
   width: 100vw;
-  padding: 0.6rem;
-  margin: 0px auto;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-style: dashed;
+  border-radius: 1rem;
   justify-content: space-between;
   align-items: baseline;
+
 
 
 }
@@ -97,8 +100,6 @@ header .image_container .logo span{
 
 
 
-
-
 @media screen and (min-width: 962px) and (max-width: 1080px) {
 
 
@@ -107,15 +108,17 @@ header .image_container .logo span{
 
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    
+    object-fit: cover;
+
   }
   
   
   header .image_container img{
-  
-    width: 100%;
+    
+    /* width: 100%; */
     height: auto;
-    background-size: cover;
+    
+
   
   }
   
@@ -139,7 +142,6 @@ header .image_container .logo span{
   
 
 
-  
 
 @media screen and (min-width: 1081px) and (max-width: 2980px) {
 
@@ -180,3 +182,202 @@ header .image_container .logo span{
   }
 
 }
+
+/** header section design end */
+
+
+
+main .main_info {
+
+  background-color: #292930;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+main .main_info h2{
+
+  margin-bottom: 1rem;
+}
+
+
+main .main_info .info_img{
+  
+  width: 55%;
+  margin: 0px auto;
+  
+}
+
+main .main_info img{
+  
+  width: 100%;
+  margin: 0.9rem 0rem;
+  border-radius: 1rem;
+  border: 3px solid hsla(50, 100%, 52%);
+  
+
+ }
+
+main .main_info .info_descrip{
+  
+
+  background-color: hsla(50, 100%, 52%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: black;
+  font-weight: 600;
+  width: 75%;
+  margin: 0px auto;
+
+ }
+
+main .main_info .info_descrip span{
+  
+
+  color: #d62828;
+  
+}
+
+
+ 
+
+@media screen and (min-width: 962px) and (max-width: 1080px) {
+  
+  main .main_info{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    align-items: center;
+    
+  }
+  
+  
+  main .main_info h2{
+  
+    margin-bottom: 1rem;
+    position: relative;
+    bottom: -40%;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 0.5rem;
+  }
+  
+  
+  main .main_info .info_descrip{
+    
+    border-radius: 0px;
+    height: 100%;
+    
+  }
+  
+}
+
+ 
+
+@media screen and (min-width: 1081px) and (max-width: 2981px) {
+  
+  main .main_info{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    align-items: center;
+    
+  }
+  
+  
+  main .main_info h2{
+  
+    margin-bottom: 1rem;
+    position: relative;
+    bottom: -20%;
+    font-size: 4rem;
+    text-align: left;
+    margin-left: 0.5rem;
+  }
+  
+  
+  main .main_info .info_descrip{
+    
+    border-radius: 0px;
+    height: 100%;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+}
+
+/** main > main_info end */
+
+main .main_descrip{
+
+  padding: 1rem;
+  position: relative;
+  background-image:linear-gradient(#000000e1, #00000080), url(resource/aa.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+main .main_descrip:hover{
+  
+
+
+}
+
+main .main_descrip .card_1, .card_2{
+
+  max-width: 55%;
+  padding: 1rem;
+  border: 3px solid #ffd60a;
+  background-color: #ffc60a;
+  border-radius: 0.5rem;
+  height: auto;
+}
+
+main .main_descrip .card_1:hover{
+
+  background-color: transparent;  
+  color: white;
+}
+
+main .main_descrip .card_2:hover{
+
+  background-color: transparent;  
+  color: white; 
+}
+
+
+
+main .main_descrip .card_1{
+
+  margin-bottom: 0.5rem;
+}
+
+main .main_descrip h2{
+
+  margin-bottom: 0.7rem;
+}
+
+main .main_descrip .card_link{
+
+  padding-top: 1rem;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #292930;
+  width: 5.5rem;
+  color: #d62828;
+}
+
+main .main_descrip .card_link:hover{
+
+  color: #ffd60a;
+}
+
